@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-05T20:06:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sean Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Demonstrating the Tags Filters in Jeklly</title><link href="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" rel="alternate" type="text/html" title="Demonstrating the Tags Filters in Jeklly" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter</id><content type="html" xml:base="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html">&lt;p&gt;For Website Reference : 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-05T20:39:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sean Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Demonstrating the Tags Filters in Jeklly</title><link href="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" rel="alternate" type="text/html" title="Demonstrating the Tags Filters in Jeklly" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter</id><content type="html" xml:base="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html">&lt;p&gt;For Website Reference : 
 &lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/docs/liquid/tags/&quot;&gt;Jekyllrb/Tags&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;1.highlight ruby&lt;/p&gt;
@@ -19,7 +19,53 @@
 
 &lt;p&gt;3.Link to Post&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/2020/11/29/first-markdown.html&quot;&gt;Link to  2020-11-29-first-markdown&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">For Website Reference : Jekyllrb/Tags</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-11-29T18:15:09+08:00</published><updated>2020-11-29T18:15:09+08:00</updated><id>http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/jekyll/update/2020/11/29/welcome-to-jekyll.html&quot;&gt;Link to  2020-11-29-first-markdown&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">For Website Reference : Jekyllrb/Tags</summary></entry><entry><title type="html">Go Notes</title><link href="http://localhost:4000/2020/12/04/GO-Note.html" rel="alternate" type="text/html" title="Go Notes" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/GO-Note</id><content type="html" xml:base="http://localhost:4000/2020/12/04/GO-Note.html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coursera.org/learn/golang-getting-started&quot;&gt;Coursera/GoLang&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a note for while Learning golang-getting-started in Coursera&lt;/p&gt;
+
+&lt;h3 id=&quot;compilation&quot;&gt;Compilation:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Translate instructions once before running the code → C , C++ , Java(Partially)&lt;/li&gt;
+  &lt;li&gt;Translation occurs only once → Saves Time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;interpretation&quot;&gt;Interpretation:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Translate instructions while code is executed -&amp;gt; Python , Java&lt;/li&gt;
+  &lt;li&gt;Translation occurs every execution and Requires an interpreter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;garbage-collection&quot;&gt;Garbage Collection:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Typically done by interpreters but Go is complied language&lt;/li&gt;
+  &lt;li&gt;Automatic memory management → compromise between Interpretation and compilation&lt;/li&gt;
+  &lt;li&gt;Manually memory management → Memory Leak→ which is there are more and more memory that is not being use&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;go-language--weakly-objected-oriented-language&quot;&gt;Go Language — Weakly objected oriented language&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Organize your code through encapsulation(封裝)&lt;/li&gt;
+  &lt;li&gt;Group together data and functions which are related&lt;/li&gt;
+  &lt;li&gt;Go doesn’t use the term Class → &lt;strong&gt;Instead uses structs with associated methods&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;simplified-implementation-of-classes&quot;&gt;Simplified implementation of classes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;No inheritance&lt;/li&gt;
+  &lt;li&gt;No constructors&lt;/li&gt;
+  &lt;li&gt;No generics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;concurrency-in-go&quot;&gt;Concurrency in Go&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Go includes concurrency primitives&lt;/li&gt;
+  &lt;li&gt;Goroutines represent concurrent tasks&lt;/li&gt;
+  &lt;li&gt;Channels are used to communicate between tasks&lt;/li&gt;
+  &lt;li&gt;Select enables task synchronization&lt;/li&gt;
+  &lt;li&gt;Concurrency primitives are efficient and easy to use&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Coursera/GoLang</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-11-29T18:15:09+08:00</published><updated>2020-11-29T18:15:09+08:00</updated><id>http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/11/29/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
@@ -35,38 +81,4 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">First Mark Down</title><link href="http://localhost:4000/2020/11/29/first-markdown.html" rel="alternate" type="text/html" title="First Mark Down" /><published>2020-11-29T00:00:00+08:00</published><updated>2020-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2020/11/29/first-markdown</id><content type="html" xml:base="http://localhost:4000/2020/11/29/first-markdown.html">&lt;p&gt;&lt;img src=&quot;https://ben.balter.com/wp-content/uploads/2010/09/wp_resume-300x223.png&quot; alt=&quot;WP Resume&quot; title=&quot;Screenshot of Example WP Resume&quot; class=&quot;float-right ml-3 border&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As I began to set up my own site, I was not a huge fan of the options out there for adding a résumé or CV to a WordPress blog. Many personal sites used lackluster TinyMCE formatting (bold, italic, bullets, nothing else) or simply stuffed pre-styled HTML into an existing page. I can’t even begin to fathom the workflows some people must go through every time they want to update their resume.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; A few purpose-built plugins offered a slightly more streamlined approach, but cluttered the backend with unnecessary and unfamiliar menus, and spawned legions of database tables to store the data.&lt;/p&gt;
-
-&lt;h3 id=&quot;enter-wp-resume&quot;&gt;Enter WP Resume&lt;/h3&gt;
-
-&lt;p&gt;WP Resume is an out-of-the-box solution to get your résumé online and keep it updated. Built on WordPress 3.0’s custom post type functionality, it offers a uniquely familiar approach to publishing. If you’ve got a WordPress site, you already know how to use WP Resume.&lt;/p&gt;
-
-&lt;h3 id=&quot;features-include&quot;&gt;Features include&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Support for sections (e.g., education, experience), organizations (e.g., somewhere state university, Cogs, Inc.), positions (e.g., bachelor of arts, chief widget specialist), and details (e.g., grew bottom line by 15%, president of the sustainability club)&lt;/li&gt;
-  &lt;li&gt;Follows best practices in resume layout and design&lt;/li&gt;
-  &lt;li&gt;One click install, just start adding content&lt;/li&gt;
-  &lt;li&gt;Drag and drop ordering of resume elements&lt;/li&gt;
-  &lt;li&gt;Built on existing WordPress code, utilizing a single custom post type and two custom taxonomies&lt;/li&gt;
-  &lt;li&gt;The WYSIWYG editing experience you know and love&lt;/li&gt;
-  &lt;li&gt;Revisioning&lt;/li&gt;
-  &lt;li&gt;Integrates with your theme like they were made for each other&lt;/li&gt;
-  &lt;li&gt;Custom URL&lt;/li&gt;
-  &lt;li&gt;Does not use pretentious accents on the word “resume”&lt;/li&gt;
-  &lt;li&gt;Extremely original title&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The hardest part of getting your résumé online should be doing the work listed on it, not wrestling the publishing platform. Simply put, WP Resume steps aside and lets your experience shine.&lt;/p&gt;
-
-&lt;p&gt;Interested? You can &lt;a href=&quot;https://ben.balter.com/resume/&quot;&gt;see it in action&lt;/a&gt;, or if you’re ready to take the plunge, &lt;a href=&quot;http://wordpress.org/extend/plugins/wp-resume/&quot;&gt;download it from the WordPress plugin repository&lt;/a&gt;, and &lt;a href=&quot;http://wordpress.org/extend/plugins/wp-resume/installation/&quot;&gt;try it today&lt;/a&gt;. There’s even a &lt;a href=&quot;http://tech.journalism.cuny.edu/documentation/wp-resume/&quot;&gt;great walkthrough put together by the good folks at CUNY Graduate School of Journalism.&lt;/a&gt; Bugs, questions, comments, feedback? I’d love to hear about your experience with WP Resume in the comments below.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;I imagine it would resemble a highly digitized &lt;a href=&quot;http://www.youtube.com/watch?v=qybUFnY7Y8w&quot;&gt;Rube Goldberg Machine&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

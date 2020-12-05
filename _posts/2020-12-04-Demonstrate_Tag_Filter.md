@@ -24,5 +24,5 @@ end
 
 3.Link to Post
 
-[Link to  2020-11-29-first-markdown]({% link _posts/2020-11-29-first-markdown.md %})
+[Link to  2020-11-29-first-markdown]({% link _posts/2020-11-29-welcome-to-jekyll.markdown %})
 
