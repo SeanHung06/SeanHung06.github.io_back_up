@@ -9,6 +9,7 @@ icons: true
 seo:
   type: person
 ---
+{{ page.title }}
 
 
 Feel free to email me at [lixuanhong06@gmail.com](mailto:lixuanhong06@gmail.com) 
