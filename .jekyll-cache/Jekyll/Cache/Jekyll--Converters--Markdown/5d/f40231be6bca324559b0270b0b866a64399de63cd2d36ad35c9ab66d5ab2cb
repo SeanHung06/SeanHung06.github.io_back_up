@@ -1,7 +1,6 @@
-<p>For Website Reference : 
-<strong><a href="https://jekyllrb.com/docs/liquid/tags/">Jekyllrb/Tags</a></strong></p>
-
-<p>1.highlight ruby</p>
+I"¸<p>For Website Reference : https://jekyllrb.com/docs/liquid/tags/
+<strong><a href="https://jekyllrb.com/docs/liquid/tags/">Jek/feedback</a></strong>
+1.highlight ruby</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
   <span class="nb">puts</span> <span class="s1">'foo'</span>
@@ -21,3 +20,4 @@
 
 <p><a href="/2020/11/29/first-markdown.html">Link to  2020-11-29-first-markdown</a></p>
 
+:ET
