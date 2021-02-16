@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Demonstrating the Tags Filters in Jeklly | Sean Blog</title>
+<title>Go Notes | Sean Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demonstrating the Tags Filters in Jeklly" />
+<meta property="og:title" content="Go Notes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Demonstrating the Tag Filter in Jeklly" />
-<meta property="og:description" content="Demonstrating the Tag Filter in Jeklly" />
-<link rel="canonical" href="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" />
-<meta property="og:url" content="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" />
+<meta name="description" content="This is a note for while Learning golang-getting-started in Coursera" />
+<meta property="og:description" content="This is a note for while Learning golang-getting-started in Coursera" />
+<link rel="canonical" href="http://localhost:4000/2020/12/04/GO-Note-copy.html" />
+<meta property="og:url" content="http://localhost:4000/2020/12/04/GO-Note-copy.html" />
 <meta property="og:site_name" content="Sean Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-04T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Demonstrating the Tags Filters in Jeklly" />
+<meta property="twitter:title" content="Go Notes" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html","headline":"Demonstrating the Tags Filters in Jeklly","dateModified":"2020-12-04T00:00:00+08:00","datePublished":"2020-12-04T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html"},"description":"Demonstrating the Tag Filter in Jeklly","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/2020/12/04/GO-Note-copy.html","headline":"Go Notes","dateModified":"2020-12-04T00:00:00+08:00","datePublished":"2020-12-04T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/12/04/GO-Note-copy.html"},"description":"This is a note for while Learning golang-getting-started in Coursera","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sean Blog" /></head>
 <body><header class="site-header" role="banner">
@@ -40,38 +40,63 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demonstrating the Tags Filters in Jeklly</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Go Notes</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2020-12-04T00:00:00+08:00" itemprop="datePublished">Dec 4, 2020
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>For Website Reference : 
-<strong><a href="https://jekyllrb.com/docs/liquid/tags/">Jekyllrb/Tags</a></strong></p>
+    <p><strong><a href="https://www.coursera.org/learn/golang-getting-started">Coursera/GoLang</a></strong></p>
 
-<p>1.highlight ruby</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a note for while Learning golang-getting-started in Coursera
+</code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span></code></pre></figure>
+<h3 id="compilation">Compilation:</h3>
 
-<p>2.highlight ruby linenos</p>
+<ul>
+  <li>Translate instructions once before running the code → C , C++ , Java(Partially)</li>
+  <li>Translation occurs only once → Saves Time</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'foo'</span>
-<span class="k">end</span>
-</pre></td></tr></tbody></table></code></pre></figure>
+<h3 id="interpretation">Interpretation:</h3>
 
-<p>3.Link to Post</p>
+<ul>
+  <li>Translate instructions while code is executed -&gt; Python , Java</li>
+  <li>Translation occurs every execution and Requires an interpreter</li>
+</ul>
 
-<p><a href="/jekyll/update/2020/11/29/welcome-to-jekyll.html">Link to  2020-11-29-first-markdown</a></p>
+<h3 id="garbage-collection">Garbage Collection:</h3>
+<ul>
+  <li>Typically done by interpreters but Go is complied language</li>
+  <li>Automatic memory management → compromise between Interpretation and compilation</li>
+  <li>Manually memory management → Memory Leak→ which is there are more and more memory that is not being use</li>
+</ul>
 
+<h3 id="go-language--weakly-objected-oriented-language">Go Language — Weakly objected oriented language</h3>
+<ul>
+  <li>Organize your code through encapsulation(封裝)</li>
+  <li>Group together data and functions which are related</li>
+  <li>Go doesn’t use the term Class → <strong>Instead uses structs with associated methods</strong></li>
+</ul>
 
-  </div><a class="u-url" href="/2020/12/04/Demonstrate_Tag_Filter.html" hidden></a>
+<h3 id="simplified-implementation-of-classes">Simplified implementation of classes</h3>
+<ul>
+  <li>No inheritance</li>
+  <li>No constructors</li>
+  <li>No generics</li>
+</ul>
+
+<h3 id="concurrency-in-go">Concurrency in Go</h3>
+<ul>
+  <li>Go includes concurrency primitives</li>
+  <li>Goroutines represent concurrent tasks</li>
+  <li>Channels are used to communicate between tasks</li>
+  <li>Select enables task synchronization</li>
+  <li>Concurrency primitives are efficient and easy to use</li>
+</ul>
+
+  </div><a class="u-url" href="/2020/12/04/GO-Note-copy.html" hidden></a>
 </article>
 
       </div>

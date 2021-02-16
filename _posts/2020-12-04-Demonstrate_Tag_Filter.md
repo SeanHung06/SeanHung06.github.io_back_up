@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Demonstrating the Tags Filters in Jeklly
 description: Demonstrating the Tag Filter in Jeklly
 ---

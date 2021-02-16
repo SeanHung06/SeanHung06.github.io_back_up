@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Go Notes
 description: This is a note for while Learning golang-getting-started in Coursera
 ---
@@ -7,7 +8,7 @@ description: This is a note for while Learning golang-getting-started in Courser
 
 
 
-This is a note for while Learning golang-getting-started in Coursera
+    This is a note for while Learning golang-getting-started in Coursera
 
 ### Compilation:
 

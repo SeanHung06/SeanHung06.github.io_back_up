@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-05T20:39:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sean Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Demonstrating the Tags Filters in Jeklly</title><link href="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" rel="alternate" type="text/html" title="Demonstrating the Tags Filters in Jeklly" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter</id><content type="html" xml:base="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html">&lt;p&gt;For Website Reference : 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-16T15:16:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sean Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Algorithms-Divide-Conquer</title><link href="http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html" rel="alternate" type="text/html" title="Algorithms-Divide-Conquer" /><published>2021-02-16T00:00:00+08:00</published><updated>2021-02-16T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coursera.org/learn/algorithms-divide-conquer/lecture/wW9On/merge-sort-analysis&quot;&gt;Coursera/Algorithms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a note  while Learning Algorithms-Divide-Conquer in Coursera
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;merge-sort&quot;&gt;Merge-Sort:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Running Time for Merge Sort&lt;/li&gt;
+  &lt;li&gt;Claim : For every Input array of n numbers , Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Coursera/Algorithms</summary></entry><entry><title type="html">Demonstrating the Tags Filters in Jeklly</title><link href="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html" rel="alternate" type="text/html" title="Demonstrating the Tags Filters in Jeklly" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter</id><content type="html" xml:base="http://localhost:4000/2020/12/04/Demonstrate_Tag_Filter.html">&lt;p&gt;For Website Reference : 
 &lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/docs/liquid/tags/&quot;&gt;Jekyllrb/Tags&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;1.highlight ruby&lt;/p&gt;
@@ -19,9 +31,10 @@
 
 &lt;p&gt;3.Link to Post&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/jekyll/update/2020/11/29/welcome-to-jekyll.html&quot;&gt;Link to  2020-11-29-first-markdown&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">For Website Reference : Jekyllrb/Tags</summary></entry><entry><title type="html">Go Notes</title><link href="http://localhost:4000/2020/12/04/GO-Note.html" rel="alternate" type="text/html" title="Go Notes" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/GO-Note</id><content type="html" xml:base="http://localhost:4000/2020/12/04/GO-Note.html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coursera.org/learn/golang-getting-started&quot;&gt;Coursera/GoLang&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/jekyll/update/2020/11/29/welcome-to-jekyll.html&quot;&gt;Link to  2020-11-29-first-markdown&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">For Website Reference : Jekyllrb/Tags</summary></entry><entry><title type="html">Go Notes</title><link href="http://localhost:4000/2020/12/04/GO-Note-copy.html" rel="alternate" type="text/html" title="Go Notes" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://localhost:4000/2020/12/04/GO-Note%20copy</id><content type="html" xml:base="http://localhost:4000/2020/12/04/GO-Note-copy.html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coursera.org/learn/golang-getting-started&quot;&gt;Coursera/GoLang&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a note for while Learning golang-getting-started in Coursera&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a note for while Learning golang-getting-started in Coursera
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;compilation&quot;&gt;Compilation:&lt;/h3&gt;
 
