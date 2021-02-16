@@ -1,7 +1,7 @@
 ---
 title: About
 description: Sean Hong is an Software developer, and a Junior Software engineer  at CTBC Bank, Top Three Bank in Taiwan , mostly working for Lending Department.
-layout: about
+layout: post
 permalink: /about/
 published: true
 id: /about
