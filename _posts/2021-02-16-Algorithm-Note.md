@@ -30,3 +30,14 @@ Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations
     end
 {% endhighlight %}
 
+`Prove of Claim`
+
+At each Level j = 0,1,2..... , log2n , there are 2^j subproblems and , each of size n/2^j
+* Total of operations at level j <= 2^j * 6 * (n/2^j)        
+`[6 indicates that every merge subroutine at most 6 operations]`
+ 
+**->** 6n     `[Independent J levels]`
+ 
+**->** 6n * (log2n+1)      `[All Levels] Plus one Because of 0 Level`
+
+

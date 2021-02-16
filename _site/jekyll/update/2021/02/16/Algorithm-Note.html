@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Algorithms-Divide-Conquer" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html"},"description":"Algorithms-divide-conquer/lecture –merge-sort-analysis","headline":"Algorithms-Divide-Conquer","dateModified":"2021-02-16T00:00:00+08:00","datePublished":"2021-02-16T00:00:00+08:00","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html","headline":"Algorithms-Divide-Conquer","dateModified":"2021-02-16T00:00:00+08:00","datePublished":"2021-02-16T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html"},"description":"Algorithms-divide-conquer/lecture –merge-sort-analysis","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sean Blog" /></head>
 <body><header class="site-header" role="banner">
@@ -71,6 +71,18 @@ Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations</p>
             <span class="no">C</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">=</span><span class="no">B</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
             <span class="n">j</span><span class="o">++</span>
     <span class="k">end</span></code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">Prove of Claim</code></p>
+
+<p>At each Level j = 0,1,2….. , log2n , there are 2^j subproblems and , each of size n/2^j</p>
+<ul>
+  <li>Total of operations at level j &lt;= 2^j * 6 * (n/2^j)      <br />
+<code class="language-plaintext highlighter-rouge">[6 indicates that every merge subroutine at most 6 operations]</code></li>
+</ul>
+
+<p><strong>-&gt;</strong> 6n     <code class="language-plaintext highlighter-rouge">[Independent J levels]</code></p>
+
+<p><strong>-&gt;</strong> 6n * (log2n+1)      <code class="language-plaintext highlighter-rouge">[All Levels] Plus one Because of 0 Level</code></p>
 
 
   </div><a class="u-url" href="/jekyll/update/2021/02/16/Algorithm-Note.html" hidden></a>
