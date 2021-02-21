@@ -72,7 +72,7 @@ Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations</p>
             <span class="n">j</span><span class="o">++</span>
     <span class="k">end</span></code></pre></figure>
 
-<p><code class="language-plaintext highlighter-rouge">Prove of Claim</code></p>
+<p><code class="language-plaintext highlighter-rouge">Proof of Claim</code></p>
 
 <p>At each Level j = 0,1,2….. , log2n , there are 2^j subproblems and , each of size n/2^j</p>
 <ul>
@@ -83,6 +83,130 @@ Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations</p>
 <p><strong>-&gt;</strong> 6n     <code class="language-plaintext highlighter-rouge">[Independent J levels]</code></p>
 
 <p><strong>-&gt;</strong> 6n * (log2n+1)      <code class="language-plaintext highlighter-rouge">[All Levels] Plus one Because of 0 Level</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">The screen shot for Insertion-Sort and Merge-Sort Time Complexity Chart--Rate of growth for Large problem size</code>
+<img src="/assets/Insertion_Sort_Merge_Sort.png" alt="My helpful screenshot" /></p>
+
+<h3 id="asymptotic-analysis">Asymptotic Analysis</h3>
+<ul>
+  <li>High Level Idea : Suppress constant Factors and lower-order terms</li>
+  <li>Example : 6nlog2n+6n with just nlogn</li>
+  <li>Terminology : Running time isd O(nLogn) [Big - Oh of n logn]</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Big O Basic Examples of Proof</code></p>
+<ul>
+  <li>
+    <p>The notation Ο(n) is the formal way to express the upper bound of an algorithm’s running time.<br />
+It measures the worst case time complexity or the longest amount of time an algorithm can possibly take to complete.</p>
+  </li>
+  <li>
+    <p>Claim :</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="no">If</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="no">Akn</span><span class="o">^</span><span class="n">k</span><span class="o">+.....</span><span class="no">A1n</span><span class="o">+</span><span class="no">A0</span>
+        <span class="no">Then</span> 
+            <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="no">O</span><span class="p">(</span><span class="n">n</span><span class="o">^</span><span class="n">k</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>Proof:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="no">Choose</span> <span class="n">n0</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">and</span> <span class="n">c</span> <span class="o">=</span> <span class="o">|</span><span class="no">Ak</span><span class="o">|+|</span><span class="no">Ak</span><span class="o">+</span><span class="mi">1</span><span class="o">|+.....|</span><span class="no">A1</span><span class="o">|+|</span><span class="no">A0</span><span class="o">|</span>
+        <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Akn</span><span class="o">^</span><span class="n">k</span><span class="o">+.....</span><span class="no">A1n</span><span class="o">+</span><span class="no">A0</span>
+        <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Akn</span><span class="o">^</span><span class="n">k</span><span class="o">+.....|</span><span class="no">A1</span><span class="o">|</span><span class="n">n</span><span class="o">^</span><span class="n">k</span><span class="o">+|</span><span class="no">A0</span><span class="o">|</span><span class="n">n</span><span class="o">^</span><span class="n">k</span>
+        <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">C</span><span class="o">*</span><span class="n">n</span><span class="o">^</span><span class="n">k</span></code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">Omega Notation</code></p>
+<ul>
+  <li>The notation Ω(n) is the formal way to express the lower bound of an algorithm’s running time.   <br />
+It measures the best case time complexity or the best amount of time an algorithm can possibly take to complete.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="err">Ω</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> 
+<span class="k">if</span> <span class="n">and</span> <span class="n">only</span> <span class="k">if</span> <span class="n">given</span> <span class="n">two</span> <span class="no">Constants</span> <span class="no">C</span><span class="p">,</span><span class="n">n0</span> <span class="n">such</span> <span class="n">that</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">.</span><span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> 
+<span class="k">for</span> <span class="n">all</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">n0</span><span class="o">.</span> </code></pre></figure>
+
+<p><img src="/assets/Omega_Notation.png" alt="My helpful screenshot" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Theta Notation</code></p>
+<ul>
+  <li>The notation θ(n) is the formal way to express both the lower bound and the upper bound of an algorithm’s running time.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="err">θ</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> 
+<span class="k">if</span> <span class="n">and</span> <span class="n">only</span> <span class="k">if</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="no">O</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="n">and</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="err">Ω</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">all</span> <span class="no">Constants</span> <span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span><span class="n">n0</span> <span class="n">such</span> <span class="n">that</span> 
+<span class="n">c1</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span><span class="o">&lt;</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">c2</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">all</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">n0</span><span class="o">.</span> </code></pre></figure>
+
+<p><img src="/assets/theta_notation.jpg" alt="My helpful screenshot" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">Little O Notation</code></p>
+<ul>
+  <li>The notation Ω(n) is the formal way to express the lower bound of an algorithm’s running time.   <br />
+It measures the best case time complexity or the best amount of time an algorithm can possibly take to complete.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="n">o</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> 
+<span class="k">if</span> <span class="n">and</span> <span class="n">only</span> <span class="k">if</span> <span class="n">given</span> <span class="n">two</span> <span class="no">Constants</span> <span class="no">C</span><span class="p">,</span><span class="n">n0</span> <span class="n">such</span> <span class="n">that</span> <span class="no">T</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">c</span><span class="p">.</span><span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> 
+<span class="k">for</span> <span class="n">all</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">n0</span><span class="o">.</span> </code></pre></figure>
+
+<ul>
+  <li>For all k&gt;=1 , n^k-1 = o(n^k)</li>
+</ul>
+
+<h3 id="assignment-1">Assignment 1</h3>
+
+<p>In this programming assignment you will implement one or more of the integer multiplication algorithms described in lecture.</p>
+
+<p>To get the most out of this assignment, your program should restrict itself to multiplying only pairs of single-digit numbers.<br />
+You can implement the grade-school algorithm if you want, but to get the most out of the assignment 
+you’ll want to implement recursive integer multiplication and/or Karatsuba’s algorithm.</p>
+
+<p>So: what’s the product of the following two 64-digit numbers?</p>
+
+<p>3141592653589793238462643383279502884197169399375105820974944592</p>
+
+<p>2718281828459045235360287471352662497757247093699959574966967627</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Python 2 and 3</span>
+<span class="k">def</span> <span class="nf">karatsuba</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="n">num1Str</span><span class="p">,</span> <span class="n">num2Str</span> <span class="o">=</span> <span class="n">str</span><span class="p">(</span><span class="n">num1</span><span class="p">),</span> <span class="n">str</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">num1Str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'-'</span><span class="p">:</span> <span class="k">return</span> <span class="o">-</span><span class="n">karatsuba</span><span class="p">(</span><span class="o">-</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num2Str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'-'</span><span class="p">:</span> <span class="k">return</span> <span class="o">-</span><span class="n">karatsuba</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="o">-</span><span class="n">num2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">num1</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="n">or</span> <span class="n">num2</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span> <span class="k">return</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span>
+    
+    <span class="c1">#retreive the split position</span>
+    <span class="n">maxLength</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">num1Str</span><span class="p">),</span> <span class="n">len</span><span class="p">(</span><span class="n">num2Str</span><span class="p">))</span>
+    <span class="n">splitposition</span> <span class="o">=</span> <span class="n">maxLength</span> <span class="sr">//</span><span class="mi">2</span> 
+    
+    <span class="n">highX</span> <span class="o">=</span> <span class="n">int</span><span class="p">(</span><span class="n">num1Str</span><span class="p">[:</span><span class="o">-</span><span class="n">splitposition</span><span class="p">])</span>
+    <span class="n">lowX</span> <span class="o">=</span> <span class="n">int</span><span class="p">(</span><span class="n">num1Str</span><span class="p">[</span><span class="o">-</span><span class="n">splitposition</span><span class="p">:])</span>
+    <span class="n">highY</span> <span class="o">=</span> <span class="n">int</span><span class="p">(</span><span class="n">num2Str</span><span class="p">[:</span><span class="o">-</span><span class="n">splitposition</span><span class="p">])</span>
+    <span class="n">lowY</span> <span class="o">=</span> <span class="n">int</span><span class="p">(</span><span class="n">num2Str</span><span class="p">[</span><span class="o">-</span><span class="n">splitposition</span><span class="p">:])</span>
+    
+    <span class="n">a1</span> <span class="o">=</span> <span class="n">karatsuba</span><span class="p">(</span><span class="n">highX</span><span class="p">,</span><span class="n">highY</span><span class="p">)</span>
+    <span class="n">d1</span> <span class="o">=</span> <span class="n">karatsuba</span><span class="p">(</span><span class="n">lowX</span><span class="p">,</span><span class="n">lowY</span><span class="p">)</span>
+    <span class="n">e1</span> <span class="o">=</span> <span class="n">karatsuba</span><span class="p">((</span><span class="n">highX</span><span class="o">+</span><span class="n">lowX</span><span class="p">),(</span><span class="n">highY</span><span class="o">+</span><span class="n">lowY</span><span class="p">))</span><span class="o">-</span><span class="n">a1</span><span class="o">-</span><span class="n">d1</span>
+    
+    
+    <span class="k">return</span> <span class="p">(</span><span class="n">a1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">splitposition</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span><span class="p">(</span><span class="n">e1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">splitposition</span><span class="p">))</span><span class="o">+</span><span class="n">d1</span></code></pre></figure>
+
+<p>[TIP: before submitting, first test the correctness of your program on some small test cases of your own devising. 
+Then post your best test cases to the discussion forums to help your fellow students!]</p>
+
+<p>[Food for thought: the number of digits in each input number is a power of 2.<br />
+Does this make your life easier?<br />
+Does it depend on which algorithm you’re implementing?]</p>
+
+<p>The numeric answer should be typed in the space below.<br />
+So if your answer is 1198233847, then just type 1198233847 in the space provided without any space / commas / any other punctuation marks.  <br />
+(We do not require you to submit your code, so feel free to use any programming language you want 
+—just type the final numeric answer in the following space.)</p>
 
 
   </div><a class="u-url" href="/jekyll/update/2021/02/16/Algorithm-Note.html" hidden></a>
