@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Algorithms-Divide-Conquer | Sean Blog</title>
+<title>Algorithms-Divide-Conquer-Week2(Inversion&amp;Closest Pair) | Sean Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Algorithms-Divide-Conquer" />
+<meta property="og:title" content="Algorithms-Divide-Conquer-Week2(Inversion&amp;Closest Pair)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Algorithms-divide-conquer/lecture –merge-sort-analysis" />
-<meta property="og:description" content="Algorithms-divide-conquer/lecture –merge-sort-analysis" />
-<link rel="canonical" href="http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html" />
+<meta name="description" content="Algorithms-divide-conquer/Counting Inversions and Closest Pair Problem" />
+<meta property="og:description" content="Algorithms-divide-conquer/Counting Inversions and Closest Pair Problem" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2021/03/07/Algorithm-Note-Week2.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2021/03/07/Algorithm-Note-Week2.html" />
 <meta property="og:site_name" content="Sean Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-02-16T00:00:00+08:00" />
+<meta property="article:published_time" content="2021-03-07T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Algorithms-Divide-Conquer" />
+<meta property="twitter:title" content="Algorithms-Divide-Conquer-Week2(Inversion&amp;Closest Pair)" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/02/16/Algorithm-Note.html"},"description":"Algorithms-divide-conquer/lecture –merge-sort-analysis","headline":"Algorithms-Divide-Conquer","dateModified":"2021-02-16T00:00:00+08:00","datePublished":"2021-02-16T00:00:00+08:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2021/03/07/Algorithm-Note-Week2.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2021/03/07/Algorithm-Note-Week2.html"},"description":"Algorithms-divide-conquer/Counting Inversions and Closest Pair Problem","headline":"Algorithms-Divide-Conquer-Week2(Inversion&amp;Closest Pair)","dateModified":"2021-03-07T00:00:00+08:00","datePublished":"2021-03-07T00:00:00+08:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sean Blog" /></head>
 <body><header class="site-header" role="banner">
@@ -40,9 +40,9 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Algorithms-Divide-Conquer</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Algorithms-Divide-Conquer-Week2(Inversion&amp;Closest Pair)</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2021-02-16T00:00:00+08:00" itemprop="datePublished">Feb 16, 2021
+      <time class="dt-published" datetime="2021-03-07T00:00:00+08:00" itemprop="datePublished">Mar 7, 2021
       </time></p>
   </header>
 
@@ -50,27 +50,87 @@
     <p><strong><a href="https://www.coursera.org/learn/algorithms-divide-conquer/lecture/wW9On/merge-sort-analysis">Coursera/Algorithms</a></strong></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Note while Learning Algorithms-Divide-Conquer in Coursera
+Counting Inversions and Closest Pair Problem
 </code></pre></div></div>
 
-<h3 id="merge-sort">Merge-Sort:</h3>
+<h3 id="counting-inversions">Counting Inversions:</h3>
 
 <ul>
-  <li>Running Time for Merge Sort</li>
-  <li>
-    <p>Claim : For every Input array of n numbers                   <br />
-Merge Sort produce a sorted array and uses at most 6nlog2n + 6n operations</p>
-  </li>
+  <li>Brute-force -&gt; θ(n^2)</li>
+  <li>Divide and Conquer</li>
+</ul>
+
+<p>Call an Inversion(i,j) [with i &lt; j ]
+    Left : if i,j &lt; n/2
+    Right : if i,j &gt; n/2 
+    Split : if i &lt;= n/2 &lt; j</p>
+
+<ul>
   <li>Persuedo Code</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="k">for</span> <span class="n">k</span> <span class="o">=</span><span class="mi">1</span> <span class="n">to</span> <span class="n">n</span> <span class="p">:</span>
-        <span class="k">if</span> <span class="no">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="no">B</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">:</span>
-            <span class="no">C</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">=</span><span class="no">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="n">i</span><span class="o">++</span>
-        <span class="k">else</span> <span class="no">B</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="no">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">:</span>
-            <span class="no">C</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">=</span><span class="no">B</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-            <span class="n">j</span><span class="o">++</span>
-    <span class="k">end</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="no">Count</span> <span class="p">(</span><span class="n">array</span> <span class="no">A</span> <span class="p">,</span> <span class="n">length</span> <span class="n">n</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span> <span class="p">,</span><span class="k">return</span> <span class="mi">0</span> 
+        <span class="k">else</span> 
+            <span class="no">X</span> <span class="o">=</span> <span class="no">Count</span><span class="p">(</span><span class="mi">1</span><span class="n">st</span> <span class="n">half</span> <span class="n">of</span> <span class="no">A</span> <span class="p">,</span> <span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+            <span class="no">Y</span> <span class="o">=</span> <span class="no">Count</span><span class="p">(</span><span class="mi">2</span><span class="n">st</span> <span class="n">half</span> <span class="n">of</span> <span class="no">A</span> <span class="p">,</span> <span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+            <span class="no">Z</span> <span class="o">=</span> <span class="no">CountSplitInv</span><span class="p">(</span><span class="no">A</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">z</span></code></pre></figure>
+
+<p>Goal : Implement CountSplitInv in linear(O(n)) then count will run in O(nlog(n)) just like Merge Sort</p>
+
+<ul>
+  <li>Idea: piggyback on merge sort</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">SortAndCountInversions</span><span class="p">(</span><span class="n">array</span> <span class="no">A</span> <span class="n">of</span> <span class="n">length</span> <span class="n">n</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="p">(</span><span class="no">A</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">else</span>
+    <span class="p">(</span><span class="no">B</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="no">SortAndCountInversions</span><span class="p">(</span><span class="n">first</span> <span class="n">half</span> <span class="n">of</span> <span class="no">A</span><span class="p">)</span>
+    <span class="p">(</span><span class="no">C</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="no">SortAndCountInversions</span><span class="p">(</span><span class="n">second</span> <span class="n">half</span> <span class="n">of</span> <span class="no">A</span><span class="p">)</span>
+    <span class="p">(</span><span class="no">D</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="o">=</span> <span class="no">MergeAndCountSlipInversions</span><span class="p">(</span><span class="no">B</span><span class="p">,</span> <span class="no">C</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">/</span><span class="sr">/ TODO
+    return (D, x + y + z)</span></code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge"> MergeAndCountSlipInversions </code><br />
+when an element of 2nd array C gets copied into output D<br />
+increment total by number of elements remaining in 1st array B</p>
+
+<p><strong><a href="https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/05DivideAndConquerI.pdf">Demonstration</a></strong></p>
+
+<h3 id="the-closest-pair-problem">The Closest Pair Problem:</h3>
+
+<p>Divide and Conquer Paradigm</p>
+
+<ol>
+  <li>DIVIDE into smaller subproblems</li>
+  <li>CONQUER subproblems recursively</li>
+  <li>COMBINE solutions and subproblems into one for the original problem</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">ClosestPair</span><span class="p">(</span><span class="no">Px</span><span class="p">,</span><span class="no">Py</span><span class="p">)</span>
+    <span class="no">Let</span> <span class="no">Q</span> <span class="o">=</span> <span class="n">left</span> <span class="n">half</span> <span class="n">of</span> <span class="no">P</span><span class="p">,</span><span class="no">R</span> <span class="o">=</span> <span class="n">right</span> <span class="n">half</span> <span class="n">of</span> <span class="no">P</span>  
+        <span class="no">Form</span> <span class="no">Qx</span><span class="p">,</span><span class="no">Qy</span><span class="p">,</span><span class="no">Rx</span><span class="p">,</span><span class="no">Ry</span> <span class="p">[</span><span class="n">takes</span> <span class="no">O</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="n">time</span><span class="p">]</span> 
+    <span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">q1</span><span class="p">)</span> <span class="o">=</span> <span class="no">ClosestPair</span> <span class="p">(</span><span class="no">Qx</span><span class="p">,</span><span class="no">Qy</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">p2</span><span class="p">,</span><span class="n">q2</span><span class="p">)</span> <span class="o">=</span> <span class="no">ClosestPair</span><span class="p">(</span><span class="no">Rx</span><span class="p">,</span><span class="no">Ry</span><span class="p">)</span>
+    <span class="no">Let</span> <span class="err">δ</span> <span class="o">=</span> <span class="n">min</span><span class="p">{</span><span class="n">d</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">q1</span><span class="p">),</span><span class="n">d</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span><span class="n">q2</span><span class="p">)}</span>
+    <span class="p">(</span><span class="n">p3</span><span class="p">,</span><span class="n">q3</span><span class="p">)</span> <span class="o">=</span> <span class="no">ClosestSplitPair</span><span class="p">(</span><span class="no">Px</span><span class="p">,</span><span class="no">Py</span><span class="p">,</span><span class="err">δ</span><span class="p">)</span>
+    <span class="no">Return</span> <span class="n">best</span> <span class="n">of</span> <span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">q1</span><span class="p">),(</span><span class="n">p2</span><span class="p">,</span><span class="n">q2</span><span class="p">),(</span><span class="n">p3</span><span class="p">,</span><span class="n">q3</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">ClosestSplitPair</span><span class="p">(</span><span class="no">Px</span><span class="p">,</span> <span class="no">Py</span><span class="p">,</span> <span class="err">δ</span><span class="p">)</span>
+  <span class="n">let</span> <span class="n">x</span> <span class="o">=</span> <span class="n">biggest</span> <span class="n">x</span><span class="o">-</span><span class="n">coordinate</span> <span class="k">in</span> <span class="n">left</span> <span class="n">of</span> <span class="no">P</span> <span class="p">(</span><span class="no">O</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+  <span class="n">let</span> <span class="no">Sy</span> <span class="o">=</span> <span class="n">points</span> <span class="n">of</span> <span class="no">P</span> <span class="n">with</span> <span class="n">x</span><span class="o">-</span><span class="n">coordinates</span> <span class="k">in</span> <span class="p">[</span><span class="n">x</span> <span class="o">-</span> <span class="err">δ</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="err">δ</span><span class="p">],</span> <span class="n">sorted</span> <span class="n">by</span> <span class="n">y</span><span class="o">-</span><span class="n">coordinates</span> <span class="p">(</span><span class="no">O</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+  <span class="n">let</span> <span class="n">best</span> <span class="o">=</span> <span class="err">δ</span>
+  <span class="n">let</span> <span class="n">best_pair</span> <span class="o">=</span> <span class="n">null</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">len</span><span class="p">(</span><span class="no">Sy</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">min</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">len</span><span class="p">(</span><span class="no">Sy</span><span class="p">)</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
+      <span class="n">let</span> <span class="nb">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">i</span><span class="o">-</span><span class="n">th</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span><span class="o">-</span><span class="n">th</span> <span class="n">points</span> <span class="n">of</span> <span class="no">Sy</span>
+
+      <span class="k">if</span> <span class="n">d</span><span class="p">(</span><span class="nb">p</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">best</span>
+        <span class="n">best</span> <span class="o">=</span> <span class="n">d</span><span class="p">(</span><span class="nb">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+        <span class="n">best_pair</span> <span class="o">=</span> <span class="p">(</span><span class="nb">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+    <span class="c1"># O(1) time</span>
+  <span class="c1"># O(n) time</span></code></pre></figure>
 
 <p><code class="language-plaintext highlighter-rouge">Proof of Claim</code></p>
 
@@ -209,7 +269,7 @@ So if your answer is 1198233847, then just type 1198233847 in the space provided
 —just type the final numeric answer in the following space.)</p>
 
 
-  </div><a class="u-url" href="/jekyll/update/2021/02/16/Algorithm-Note.html" hidden></a>
+  </div><a class="u-url" href="/jekyll/update/2021/03/07/Algorithm-Note-Week2.html" hidden></a>
 </article>
 
       </div>
