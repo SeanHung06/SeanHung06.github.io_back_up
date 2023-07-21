@@ -1,3 +1,5 @@
 1
 2
 fix b
+fix a
+fix c
