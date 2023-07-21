@@ -2,3 +2,5 @@
 test on rebase
 
 test merge1
+
+test merge2
